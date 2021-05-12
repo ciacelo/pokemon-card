@@ -1,0 +1,71 @@
+.container {
+  width: 100%;
+  height: 100%;
+  padding: 2rem;
+  .main {
+    height: 100%;
+    overflow-y: auto;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 25px 15px;
+    transition: all 0.2s ease;
+    padding: 5px;
+
+    &::-webkit-scrollbar {
+      background: rgb(221, 221, 221);
+      border-radius: 6px;
+    }
+
+    &::-webkit-scrollbar-thumb {
+      background: rgb(192, 191, 191);
+      border-radius: 6px;
+    }
+
+    .card {
+      box-shadow: 0 1px 5px 0 rgb(197, 195, 195);
+      width: 200px;
+      height: 250px;
+      border-radius: 6px;
+      position: relative;
+      cursor: pointer;
+
+      .image {
+        max-width: 200px;
+      }
+
+      &:hover {
+        .body {
+          opacity: 1;
+          transform: initial;
+        }
+      }
+
+      .body {
+        background: linear-gradient(
+          0deg,
+          #fff,
+          #fffffff0,
+          #f1f1f1ce,
+          #faf8f8af,
+          #ffffff07
+        );
+        position: absolute;
+        width: 100%;
+        min-height: 80px;
+        bottom: 0;
+        color: rgb(32, 29, 90);
+        transition: all 0.2s linear;
+        opacity: 0;
+        transform: translateY(10px);
+        border-bottom-left-radius: 6px;
+        border-bottom-right-radius: 6px;
+
+        p {
+          text-transform: capitalize;
+          text-align: center;
+          text-shadow: 0 1px 3px rgb(255, 255, 255);
+        }
+      }
+    }
+  }
+}
