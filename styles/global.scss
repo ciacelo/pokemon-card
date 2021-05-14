@@ -6,7 +6,7 @@ body {
   margin: 0;
   font-family: -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Oxygen,
     Ubuntu, Cantarell, Fira Sans, Droid Sans, Helvetica Neue, sans-serif;
-  color: $blue-dark-text-color;
+  color: $white-text-color;
 }
 
 * {
@@ -44,6 +44,10 @@ footer a {
 a {
   color: inherit;
   text-decoration: none;
+}
+
+p {
+  color: $blue-dark-text-color;
 }
 
 code {

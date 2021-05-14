@@ -1,7 +1,6 @@
 import React from 'react';
 import Layout from '../../components/Layout';
 import styles from './pokemon.module.scss';
-
 const PokemonDetails = ({ result }) => {
   console.log('detalhes: ', result);
   const { name, base_experience, height, weight, image, types } = result;
