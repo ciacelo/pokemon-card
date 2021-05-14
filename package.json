@@ -9,12 +9,14 @@
     "test:ci": "jest --ci"
   },
   "dependencies": {
+    "@types/jest": "^26.0.23",
     "next": "latest",
     "react": "16.12.0",
     "react-dom": "16.12.0",
     "sass": "^1.32.12"
   },
   "devDependencies": {
+    "@testing-library/dom": "^7.31.0",
     "@testing-library/jest-dom": "^5.1.0",
     "@testing-library/react": "^9.4.0",
     "babel-jest": "^25.1.0",
