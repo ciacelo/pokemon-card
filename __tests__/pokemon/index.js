@@ -1,5 +1,5 @@
 import React from 'react';
-import { render, waitForElement } from '@testing-library/react';
+import { render, waitFor } from '@testing-library/react';
 import Pokemon from '../../components/pokemon/Pokemon';
 
 describe('component <Pokemon>', () => {
@@ -28,7 +28,7 @@ describe('component <Pokemon>', () => {
 
   it('should have link in item of the array', async () => {
     const { getByTestId } = render(<Pokemon pokemon={pokemon} />);
-    const elemntLinkZero = await waitForElement(() => getByTestId('link-0'));
+    const elemntLinkZero = await waitFor(() => getByTestId('link-0'));
     expect(elemntLinkZero).toBeDefined();
   });
 
